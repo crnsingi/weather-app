@@ -5,11 +5,7 @@ const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 const cityHide = document.querySelector('.city-hide');
 
-
-
-
 search.addEventListener('click', () => {
-
      const APIKey = '24e1fbb280bbd63e3bd0bb11a9576d54';
      const city = document.querySelector('.search-box input').value;
 
@@ -17,8 +13,6 @@ search.addEventListener('click', () => {
         return;
 
      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then(response => response.json()).then(json => { 
-
-
         if(json.cod == '404'){
             cityHide.textContent = city;
             container.style.height = '400px';
@@ -27,7 +21,6 @@ search.addEventListener('click', () => {
             error404.classList.add('active');
             return;
         }
-
 
         container.style.height = '555px';
         weatherBox.classList.add('active');
@@ -42,7 +35,6 @@ search.addEventListener('click', () => {
 
          if(cityHide.textContent == city ) { 
             return;
-
          }
          else {
             cityHide.textContent = city;
@@ -53,10 +45,8 @@ search.addEventListener('click', () => {
             weatherDetails.classList.add('active');
             error404.classList.remove('active');
 
-
             setTimeout(() => {
                  container.classList.remove('active');
-
             }, 2500);
 
             switch (json.weather[0].main) {
@@ -98,7 +88,6 @@ search.addEventListener('click', () => {
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
-
             const infoWeather = document.querySelector('.info-weather');
             const infoHumidity = document.querySelector('.info-humidity');
             const infoWind = document.querySelector('.info-wind');
@@ -120,7 +109,6 @@ search.addEventListener('click', () => {
                 infoWeather.insertAdjacentElement("afterend", elCloneInfoWeather);
                 infoHumidity.insertAdjacentElement("afterend", elCloneInfoHumidity);
                 infoWind.insertAdjacentElement("afterend", elCloneInfoWind);
-                
             }, 2200);
 
             const cloneInfoWeather = document.querySelectorAll('.info-weather.active-clone');
@@ -134,7 +122,6 @@ search.addEventListener('click', () => {
             const cloneInfoWindFirst = cloneInfoWind[0];
 
             if(totalCloneInfoWeather > 0) {
-
                 cloneInfoWeatherFirst.classList.remove('active-clone');
                 cloneInfoHumidityFirst.classList.remove('active-clone');
                 cloneInfoWindFirst.classList.remove('active-clone');
@@ -144,13 +131,7 @@ search.addEventListener('click', () => {
                     cloneInfoHumidityFirst.remove();
                     cloneInfoWindFirst.remove();
                 }, 2200);
-
-
-
             } 
-
          }
-
      });
-
 });
