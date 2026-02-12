@@ -1,37 +1,34 @@
-### 🌤️  Weather App
-A simple and responsive Weather App that provides real-time weather information for any city.
+Features
 
-Built with HTML, CSS and JavaScript and powered by the OpenWeatherMap API 
-
-
-🚀 Features:
 🌍 Search weather by city name
-🌡️ Displays temperature, humidity, wind speed, and conditions
+
+🌡️ Displays temperature in Celsius
+
+💧 Shows humidity percentage
+
+🌬️ Displays wind speed
+
 🌤️ Dynamic weather icons
+
 📍 Optional geolocation detection
-📱 Fully responsive UI
-⚡ Fast & lightweight
 
-🛠️ Old Tech Stack
-Frontend: HTML, CSS, JavaScript
-API: OpenWeatherMap API
-Styling:  CSS / Styled Components 
+📱 Fully responsive design
 
+⚡ Fast and lightweight
 
-🛠️ New Tech Stack:
-Frontend:
-TypeScript
+🛠️ Tech Stack
+🔹 Frontend
+
 React
+
+TypeScript
+
 Tailwind CSS
 
-API:
+🔹 API
+
 OpenWeatherMap API
 
-Deployment:
-Vercel
+🔹 Deployment
 
-📈 Improvements from Previous Version
-Migrated from JavaScript to TypeScript for better scalability and maintainability
-Replaced traditional CSS with Tailwind CSS for a cleaner and more modern UI
-Improved component structure and code organization
-Optimized for production with Vercel deployment
+Vercel
