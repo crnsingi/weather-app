@@ -1,4 +1,4 @@
-🌤️ Weather App
+### 🌤️  Weather App
 A simple and responsive Weather App that provides real-time weather information for any city.
 
 Built with HTML, CSS and JavaScript and powered by the OpenWeatherMap API 
