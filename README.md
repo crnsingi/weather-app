@@ -12,13 +12,13 @@ Built with HTML, CSS and JavaScript and powered by the OpenWeatherMap API
 📱 Fully responsive UI
 ⚡ Fast & lightweight
 
-🛠️ Tech Stack
+🛠️ Old Tech Stack
 Frontend: HTML, CSS, JavaScript
 API: OpenWeatherMap API
 Styling:  CSS / Styled Components 
 
 
-🛠️ Tech Stack
+🛠️ New Tech Stack:
 Frontend:
 TypeScript
 React
