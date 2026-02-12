@@ -16,3 +16,22 @@ Built with HTML, CSS and JavaScript and powered by the OpenWeatherMap API
 Frontend: HTML, CSS, JavaScript
 API: OpenWeatherMap API
 Styling:  CSS / Styled Components 
+
+
+🛠️ Tech Stack
+Frontend:
+TypeScript
+React
+Tailwind CSS
+
+API:
+OpenWeatherMap API
+
+Deployment:
+Vercel
+
+📈 Improvements from Previous Version
+Migrated from JavaScript to TypeScript for better scalability and maintainability
+Replaced traditional CSS with Tailwind CSS for a cleaner and more modern UI
+Improved component structure and code organization
+Optimized for production with Vercel deployment
